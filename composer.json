@@ -1,0 +1,27 @@
+{
+    "name": "star/ddd-example",
+    "description": "Example of how I structure my DDD application",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.1",
+        "behat/behat": "^3.11"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan-phpunit": "^1.1",
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.7",
+        "symfony/console": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Star\\DDDExample\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir": "bin"
+    }
+}

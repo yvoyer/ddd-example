@@ -1,0 +1,12 @@
+default:
+    suites:
+        cli:
+            paths: ["%paths.base%/features"]
+            formatter: progress
+            contexts:
+                - CLIToolContext
+        in_memory:
+            paths: ["%paths.base%/features"]
+            formatter: progress
+            contexts:
+                - InMemoryContext
